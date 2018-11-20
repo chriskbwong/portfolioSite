@@ -450,7 +450,9 @@ body {
   background: black;
 }
 
-/*##### ABOUT MYSELF SECTION #####*/
+/*----------
+Bio
+------------*/
 .bio {
   height: 100%;
   background: #395b7a url("../images/backgrounds/bio-bridge.jpg") 0 0 no-repeat;
@@ -485,8 +487,10 @@ body {
   font-weight: bold;
 }
 
-/*##### EXPERIENCE SECTION #####*/
-/* ================ The experience ================ */
+/*------------
+Timeline
+--------------*/
+
 .experience {
   position: relative;
   width: 660px;
@@ -658,7 +662,7 @@ body {
   color: #000;
 }
 
-/* ================ experience Media Queries ================ */
+/* timeline formatting */
 @media screen and (max-width: 660px) {
   .experience {
     width: 100%;
@@ -715,7 +719,9 @@ body {
     z-index: 15;
   }
 }
-/*##### SKILLS SECTION #####*/
+/*---------
+Skills
+-----------*/
 .tiles {
   position: absolute;
   top: 50%;
@@ -813,6 +819,10 @@ body {
   border-radius: 2px;
   transition-delay: 0.15s;
 }
+/*each tile is a child that must be made individually
+*images are stored locally on server
+*after is for after the user hovers over the tile
+*tiles are directionally aware*/
 .col:nth-child(1) .box:before {
   content: url("../images/tile_icons/python.png");
   background: #f16528;
