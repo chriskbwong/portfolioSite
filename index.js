@@ -8,7 +8,7 @@ $(".home .content .sutro-photo")
   .animate(
     {
       opacity: "1",
-      top: "52%"
+      top: "50%"
     },
     1000
   );
