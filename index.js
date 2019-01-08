@@ -1,9 +1,10 @@
 $("#fullpage").fullpage({
-  sectionsColor: ["#344557", "#395B7A", "#3E729E", "#4389C1", "#48A0E5"],
-  anchors: ["home", "bio", "experience", "skills", "projects"],
-  fixedElements: "#footer"
+  sectionsColor: ["#344557", "#395B7A", "#3E729E", "#4389C1"],
+  anchors: ["hero", "about-myself", "timeline", "skills"],
+  fixedElements: "#footer",
+  slidesNavigation: true
 });
-$(".home .content .sutro-photo")
+$(".hero .content .sutro-photo")
   .delay(500)
   .animate(
     {
@@ -12,7 +13,7 @@ $(".home .content .sutro-photo")
     },
     1000
   );
-$(".bio .content h2")
+$(".about-myself .content h2")
   .delay(500)
   .animate(
     {
